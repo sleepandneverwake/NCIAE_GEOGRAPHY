@@ -1,0 +1,33 @@
+server:
+  port: 30000
+spring:
+  mail:
+    smtp:
+      auth: true
+    host: smtp.qq.com
+    port: 587
+    username: 1397771248@qq.com
+    password: fotuzdywrojzhcfa
+  data:
+    mongodb:
+      uri: mongodb://39.97.109.154/nciae
+  redis:
+    host: 39.97.242.135
+    port: 61375
+    password: arbitration
+  rabbitmq:
+    host: 101.200.90.151
+    port: 5672
+    username: guest
+    password: guest
+  datasource:
+    url: jdbc:mysql://39.97.109.154:3306/nciae?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath:dao/*.xml
+  type-aliases-package: com.nciae.po
+  configuration:
+    lazy-loading-enabled: true
+    aggressive-lazy-loading: false
